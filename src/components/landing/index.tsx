@@ -1,0 +1,6 @@
+export { default as Feature } from './feature'
+export { default as Header } from './header'
+export { default as Hero } from './hero'
+export { default as Partners } from './partners'
+export { default as Roadmap } from './roadmap'
+export { default as Whitepaper } from './whitepaper'
