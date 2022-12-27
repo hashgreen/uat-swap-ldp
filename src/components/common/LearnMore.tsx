@@ -20,7 +20,7 @@ const LearnMore = ({ href, size, className }: ILearnMoreProps) => {
         >
             <p>learn more</p>
             <img
-                src="src/assets/common/openLink.svg"
+                src="/images/icons/openLink.svg"
                 alt="open-link"
                 width={size}
                 height={size}

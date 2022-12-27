@@ -4,7 +4,6 @@ import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: '/uat-swap-ldp/',
     plugins: [react()],
     server: {
         port: 3000,

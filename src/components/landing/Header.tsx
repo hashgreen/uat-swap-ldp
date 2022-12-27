@@ -16,7 +16,7 @@ const Header = ({ className }: IProps) => {
         >
             <div className="ml-4">
                 <img
-                    src="src/assets/common/logo.svg"
+                    src="/images/icons/logo.svg"
                     alt="logo"
                     height={24}
                     width={170}
@@ -25,7 +25,7 @@ const Header = ({ className }: IProps) => {
             <div className="mr-6 flex items-center">
                 <LanguageSelect className="mr-3" />
                 <IconLink
-                    src="src/assets/common/discord.svg"
+                    src="/images/icons/discord.svg"
                     alt="discord"
                     href="https://"
                     className="h-6 w-6"

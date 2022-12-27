@@ -1,4 +1,4 @@
-import { partnerList } from '@/assets/const/partner'
+import { partnerList } from '@/const/partner'
 import React from 'react'
 
 const Partners = () => {

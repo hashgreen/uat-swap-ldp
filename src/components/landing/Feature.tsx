@@ -1,5 +1,5 @@
-import { featureList, IFeatureProps } from '@/assets/const/feature'
 import { LearnMore, TempBg } from '@/components/common'
+import { featureList, IFeatureProps } from '@/const/feature'
 import React from 'react'
 
 const FeatureItem = ({ feature }: { feature: IFeatureProps }) => {
@@ -20,7 +20,7 @@ const FeatureItem = ({ feature }: { feature: IFeatureProps }) => {
                     >
                         <p>learn more</p>
                         <img
-                            src="src/assets/common/openLink.svg"
+                            src="/images/icons/openLink.svg"
                             alt="open-link"
                             width={32}
                             height={32}

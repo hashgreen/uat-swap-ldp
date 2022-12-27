@@ -26,7 +26,7 @@ const LinkButton = ({
             )}
         >
             <img src={src} alt={alt} width={24} height={24} />
-            <p className="text-lg	">{desc}</p>
+            <p className="text-lg">{desc}</p>
         </a>
     )
 }
@@ -53,14 +53,14 @@ const hero = () => {
                 <div className="mt-14 flex w-full flex-wrap justify-center gap-6 xl:mt-24">
                     <LinkButton
                         href="https://"
-                        src="src/assets/common/discord.svg"
+                        src="/images/icons/discord.svg"
                         alt="discord"
                         className="bg-[#21B8E1]"
                         desc="Join our community"
                     />
                     <LinkButton
                         href="https://"
-                        src="src/assets/common/twitter.svg"
+                        src="/images/icons/twitter.svg"
                         alt="twitter"
                         className="border"
                         desc="Follow our Twitter"

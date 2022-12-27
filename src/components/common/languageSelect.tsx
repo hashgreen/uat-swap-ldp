@@ -66,7 +66,7 @@ const LanguageSelect = ({ className }: IProps) => {
                 className="relative h-7 w-7 cursor-pointer"
                 onClick={handleToggle}
             >
-                <img src="src/assets/common/language.svg" alt="language" />
+                <img src="/images/icons/language.svg" alt="language" />
             </div>
             {open && (
                 <div className="absolute -bottom-3 right-0 w-[180px] translate-y-full rounded-xl border border-[#2A525E] bg-[#0B2127] py-3">

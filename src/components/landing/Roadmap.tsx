@@ -2,7 +2,7 @@ import {
     IRoadmapProps,
     roadmapList,
     RoadmapTitleColorType,
-} from '@/assets/const/roadmap'
+} from '@/const/roadmap'
 import classNames from 'classnames'
 import React from 'react'
 
@@ -10,7 +10,7 @@ const RoadmapItem = ({ roadmap }: { roadmap: IRoadmapProps }) => {
     return (
         <div className="relative pl-11">
             <div className="absolute top-0 left-0 h-10 w-10">
-                <img src="src/assets/common/star.svg" alt="star" />
+                <img src="/images/icons/star.svg" alt="star" />
             </div>
             <div className="flex flex-col">
                 <p
