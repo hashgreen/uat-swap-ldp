@@ -31,9 +31,9 @@ const LinkButton = ({
     )
 }
 
-const hero = () => {
+const Hero = () => {
     return (
-        <div className="pyke-container-root relative z-0 h-screen">
+        <div className="ldp-container-root relative z-0 h-screen">
             {/* region start temp bg */}
             <div className="absolute h-full w-full lg:hidden">
                 <TempBg size={160} className="-z-10" />
@@ -42,8 +42,8 @@ const hero = () => {
                 <TempBg size={250} className="-z-10" />
             </div>
             {/* region end temp bg */}
-            <div className="pyke-container flex h-full flex-col items-center justify-center text-center">
-                <p className="text-5xl md:text-6xl	">
+            <div className="ldp-container flex h-full flex-col items-center justify-center text-center">
+                <p className="text-5xl md:text-6xl">
                     Stake, Earn, and Swap on Chia Blockchain
                 </p>
                 <p className="mt-4 text-base md:mt-10 md:text-2xl">
@@ -71,4 +71,4 @@ const hero = () => {
     )
 }
 
-export default hero
+export default Hero
