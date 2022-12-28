@@ -3,8 +3,8 @@ import React from 'react'
 
 const Partners = () => {
     return (
-        <div className="pyke-container-root mb-16 md:mb-24">
-            <div className="pyke-container flex flex-col items-center">
+        <div className="ldp-container-root mb-16 md:mb-24">
+            <div className="ldp-container flex flex-col items-center">
                 <p className="section-title">Partners & Investors</p>
                 <div className="mt-8 flex w-full flex-row flex-wrap items-center justify-center gap-x-10 gap-y-6 md:max-w-[550px] xl:max-w-[1080px] xl:justify-between xl:gap-x-6">
                     {partnerList.map((partner) => (

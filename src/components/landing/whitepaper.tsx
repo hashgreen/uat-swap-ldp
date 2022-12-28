@@ -3,8 +3,8 @@ import React from 'react'
 
 const Whitepaper = () => {
     return (
-        <div className="pyke-container-root mb-20">
-            <div className="pyke-container flex flex-col rounded-xl border border-[#2A525E] lg:flex-row">
+        <div className="ldp-container-root mb-20">
+            <div className="ldp-container flex flex-col rounded-xl border border-[#2A525E] lg:flex-row">
                 <div className="px-8 py-10">
                     <p className="text-3xl sm:text-4xl">Whitepaper</p>
                     <p className="mt-6 text-sm opacity-70 sm:mt-8 sm:text-base">

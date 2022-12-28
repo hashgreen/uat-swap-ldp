@@ -11,11 +11,11 @@ body {
     @apply bg-[#0B2127];
 }
 
-.pyke-container-root {
+.ldp-container-root {
     @apply flex w-full justify-center;
 }
 
-.pyke-container {
+.ldp-container {
     @apply mx-6 w-full max-w-[600px] lg:max-w-[800px] xl:max-w-[1080px];
 }
 

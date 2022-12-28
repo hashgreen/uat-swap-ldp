@@ -4,8 +4,8 @@ import React from 'react'
 
 const Community = () => {
     return (
-        <div className="pyke-container-root mb-12 sm:mb-16 md:mb-20">
-            <div className="pyke-container">
+        <div className="ldp-container-root mb-12 sm:mb-16 md:mb-20">
+            <div className="ldp-container">
                 <div className="relative mb-8 h-[400px] w-full overflow-hidden rounded-xl border border-[#2A525E] xl:mb-20">
                     <TempBg size={120} />
                     <div className="z-1 absolute flex h-full w-full flex-col items-center justify-center gap-y-8 px-8 sm:px-11">

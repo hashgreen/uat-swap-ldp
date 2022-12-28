@@ -39,8 +39,8 @@ const RoadmapItem = ({ roadmap }: { roadmap: IRoadmapProps }) => {
 
 const Roadmap = () => {
     return (
-        <div className="pyke-container-root mb-20">
-            <div className="pyke-container">
+        <div className="ldp-container-root mb-20">
+            <div className="ldp-container">
                 <div className="flex flex-col items-center justify-center">
                     <p className="section-title">Roadmap</p>
                     <div className="relative mt-8 flex w-full max-w-[550px] flex-col gap-y-8">

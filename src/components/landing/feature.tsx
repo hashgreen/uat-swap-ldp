@@ -44,8 +44,8 @@ const FeatureItem = ({ feature }: { feature: IFeatureProps }) => {
 
 const Feature = () => {
     return (
-        <div className="pyke-container-root">
-            <div className="pyke-container my-12 flex flex-col items-center gap-y-8 md:my-20 lg:my-24">
+        <div className="ldp-container-root">
+            <div className="ldp-container my-12 flex flex-col items-center gap-y-8 md:my-20 lg:my-24">
                 {featureList.map((feature) => (
                     <FeatureItem feature={feature} />
                 ))}

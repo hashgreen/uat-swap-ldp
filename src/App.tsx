@@ -1,6 +1,7 @@
 import {
     Community,
     Feature,
+    Footer,
     Header,
     Hero,
     Partners,
@@ -19,6 +20,7 @@ function App() {
             <Whitepaper />
             <Partners />
             <Community />
+            <Footer />
         </div>
     )
 }
