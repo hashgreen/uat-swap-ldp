@@ -11,7 +11,7 @@ const FeatureItem = ({ feature }: { feature: IFeatureProps }) => {
                 </div>
                 <div className="flex flex-col gap-y-4 p-8">
                     <p className="text-2xl">{feature.title}</p>
-                    <p className="text-base	opacity-70">{feature.desc}</p>
+                    <p className="section-desc">{feature.desc}</p>
                     <a
                         href={feature.href}
                         target="_blank"
@@ -31,7 +31,7 @@ const FeatureItem = ({ feature }: { feature: IFeatureProps }) => {
             <div className="hidden h-[240px] max-w-[800px] bg-[#203339] lg:flex lg:flex-row lg:items-center lg:justify-between">
                 <div className="flex h-full flex-1 flex-col justify-center gap-y-4 p-8">
                     <p className="text-3xl">{feature.title}</p>
-                    <p className="text-base	opacity-70">{feature.desc}</p>
+                    <p className="section-desc">{feature.desc}</p>
                     <LearnMore href={feature.href} size={32} />
                 </div>
                 <div className="relative h-full w-[320px]">
