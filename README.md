@@ -5,7 +5,7 @@
 * [Figma - LDP final](https://www.figma.com/file/BeNDoCZkuInKFAF5bPMlYV/Landing-Page-v2-(%E6%A7%8B%E5%9C%96%E4%B8%AD)?node-id=99%3A356&t=EA6BpmrmhieFBLlO-0)
 
 ### GA
-* [GA project](https://analytics.google.com/analytics/web/#/p282124585/reports/intelligenthome)
+* [GA project](https://analytics.google.com/analytics/web/?authuser=1#/p347540937/reports/intelligenthome)
 * [GA event list](https://docs.google.com/spreadsheets/d/19irCOtBJdtsvDITScZ8wJs7igQ1lABPxcSC5WVOZeOY/edit#gid=0)
 
 ## Development
