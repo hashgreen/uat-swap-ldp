@@ -8,7 +8,10 @@ const Footer = () => {
                 {/* <div className="flex flex-row flex-wrap items-start justify-center gap-x-[88px] gap-y-8 md:justify-between md:gap-x-[50px]"> */}
                 <div className="grid w-fit grid-cols-2 gap-x-[88px] gap-y-8 xl:w-full xl:grid-cols-4">
                     {footerList.map((footer) => (
-                        <div className="w-[112px] text-sm md:text-base">
+                        <div
+                            className="w-[112px] text-sm md:text-base"
+                            key={footer.title}
+                        >
                             <p className="mb-4">{footer.title}</p>
                             <div className="flex flex-col gap-y-2">
                                 {footer.items.map((item) => (
@@ -16,6 +19,7 @@ const Footer = () => {
                                         href={item.href}
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        key={item.title}
                                     >
                                         <p className="text-[#B6B6B6]">
                                             {item.title}

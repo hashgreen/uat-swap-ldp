@@ -28,7 +28,10 @@ const RoadmapItem = ({ roadmap }: { roadmap: IRoadmapProps }) => {
                     {roadmap.title}
                 </p>
                 {roadmap.items.map((item) => (
-                    <div className="my-1 w-fit rounded-xl bg-[#1F3338] py-2 px-4 lg:rounded-3xl">
+                    <div
+                        className="my-1 w-fit rounded-xl bg-[#1F3338] py-2 px-4 lg:rounded-3xl"
+                        key={item.desc}
+                    >
                         <p className="mr-1 text-sm lg:text-base">{item.desc}</p>
                     </div>
                 ))}
@@ -47,7 +50,10 @@ const Roadmap = () => {
                         {/* timeline */}
                         <div className="absolute left-5 h-full border" />
                         {roadmapList.map((roadmap) => (
-                            <RoadmapItem roadmap={roadmap} />
+                            <RoadmapItem
+                                roadmap={roadmap}
+                                key={roadmap.title}
+                            />
                         ))}
                     </div>
                 </div>

@@ -32,7 +32,10 @@ const Community = () => {
                 </div>
                 <div className="flex flex-col gap-6 xl:flex-row">
                     {communityList.map((community) => (
-                        <div className="flex flex-col items-center justify-center rounded-xl border border-[#2A525E] py-8 xl:flex-1">
+                        <div
+                            className="flex flex-col items-center justify-center rounded-xl border border-[#2A525E] py-8 xl:flex-1"
+                            key={community.alt}
+                        >
                             <img
                                 src={community.src}
                                 alt={community.alt}

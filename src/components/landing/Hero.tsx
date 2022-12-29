@@ -35,11 +35,11 @@ const Hero = () => {
     return (
         <div className="ldp-container-root relative z-0 h-screen">
             {/* region start temp bg */}
-            <div className="absolute h-full w-full lg:hidden">
-                <TempBg size={160} className="-z-10" />
+            <div className="absolute -z-10 h-full w-full lg:hidden">
+                <TempBg size={160} />
             </div>
-            <div className="absolute hidden h-full w-full lg:block">
-                <TempBg size={250} className="-z-10" />
+            <div className="absolute -z-10 hidden h-full w-full lg:block">
+                <TempBg size={250} />
             </div>
             {/* region end temp bg */}
             <div className="ldp-container flex h-full flex-col items-center justify-center text-center">

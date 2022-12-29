@@ -8,7 +8,10 @@ const Partners = () => {
                 <p className="section-title">Partners & Investors</p>
                 <div className="mt-8 flex w-full flex-row flex-wrap items-center justify-center gap-x-10 gap-y-6 md:max-w-[550px] xl:max-w-[1080px] xl:justify-between xl:gap-x-6">
                     {partnerList.map((partner) => (
-                        <div className="relative flex h-[120px] w-[240px] items-center justify-center rounded-xl border	border-[#2A525E]">
+                        <div
+                            className="relative flex h-[120px] w-[240px] items-center justify-center rounded-xl border	border-[#2A525E]"
+                            key={partner.alt}
+                        >
                             <img
                                 src={partner.src}
                                 alt={partner.alt}
