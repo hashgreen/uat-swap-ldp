@@ -14,7 +14,12 @@ const Whitepaper = () => {
                         HashgreenSwap, and you are welcome to read it for
                         further understanding.
                     </p>
-                    <LearnMore className="mt-8" href="https://" size={24} />
+                    <LearnMore
+                        className="mt-8"
+                        href="https://"
+                        size={24}
+                        label="Click_whitepaper"
+                    />
                 </div>
                 <div className="relative aspect-[3/2] w-full xl:max-w-[600px]">
                     <TempBg size={120} />

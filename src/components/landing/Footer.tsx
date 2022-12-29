@@ -1,3 +1,4 @@
+import { GALink } from '@/components/common'
 import { footerList } from '@/const/footer'
 import React from 'react'
 
@@ -15,7 +16,10 @@ const Footer = () => {
                             <p className="mb-4">{footer.title}</p>
                             <div className="flex flex-col gap-y-2">
                                 {footer.items.map((item) => (
-                                    <a
+                                    <GALink
+                                        category={footer.title}
+                                        action="Click"
+                                        label={item.label}
                                         href={item.href}
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -24,7 +28,7 @@ const Footer = () => {
                                         <p className="text-[#B6B6B6]">
                                             {item.title}
                                         </p>
-                                    </a>
+                                    </GALink>
                                 ))}
                             </div>
                         </div>

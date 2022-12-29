@@ -1,3 +1,4 @@
+import { GADiv } from '@/components/common'
 import classNames from 'classnames'
 import React, { useState } from 'react'
 
@@ -33,14 +34,17 @@ const MenuItem = ({
     handleClick: (code: string) => void
 }) => {
     return (
-        <div
+        <GADiv
+            category="switch-language"
+            action="Click"
+            label={item.code}
             className="h-full cursor-pointer py-3 px-4 text-base text-white hover:bg-[#35464B]"
             onClick={() => {
                 handleClick(item.code)
             }}
         >
             <p>{item.name}</p>
-        </div>
+        </GADiv>
     )
 }
 

@@ -1,8 +1,12 @@
-import { TempBg } from '@/components/common'
+import { GALink, TempBg } from '@/components/common'
+import { IGAProps } from '@/utils/ga'
 import classNames from 'classnames'
 import React from 'react'
 
 const LinkButton = ({
+    category,
+    action,
+    label,
     src,
     alt,
     href,
@@ -14,12 +18,13 @@ const LinkButton = ({
     href: string
     className: string
     desc: string
-}) => {
+} & IGAProps) => {
     return (
-        <a
+        <GALink
+            category={category}
+            action={action}
+            label={label}
             href={href}
-            target="_blank"
-            rel="noopener noreferrer"
             className={classNames(
                 'flex w-full max-w-[285px] flex-row gap-3 rounded-xl px-5 py-3 uppercase',
                 className
@@ -27,7 +32,7 @@ const LinkButton = ({
         >
             <img src={src} alt={alt} width={24} height={24} />
             <p className="text-lg">{desc}</p>
-        </a>
+        </GALink>
     )
 }
 
@@ -42,9 +47,9 @@ const Hero = () => {
                 <TempBg size={250} />
             </div>
             {/* region end temp bg */}
-            <div className="ldp-container flex h-full flex-col items-center justify-center text-center">
+            <div className="ldp-container flex h-full flex-col items-center justify-center pt-10 text-center">
                 <p className="text-5xl md:text-6xl">
-                    Stake, Earn, and Swap on Chia Blockchain
+                    Stake, Earn, and Swap on the Chia Blockchain
                 </p>
                 <p className="mt-4 text-base md:mt-10 md:text-2xl">
                     Hashgreen brings the first decentralized liquidity staking
@@ -52,6 +57,9 @@ const Hero = () => {
                 </p>
                 <div className="mt-14 flex w-full flex-wrap justify-center gap-6 xl:mt-24">
                     <LinkButton
+                        category="cta"
+                        action="Click"
+                        label="Click_hero-connect-to-discord"
                         href="https://"
                         src="/images/icons/discord.svg"
                         alt="discord"
@@ -59,6 +67,9 @@ const Hero = () => {
                         desc="Join our community"
                     />
                     <LinkButton
+                        category="cta"
+                        action="Click"
+                        label="Click_hero-connect-to-twitter"
                         href="https://"
                         src="/images/icons/twitter.svg"
                         alt="twitter"
