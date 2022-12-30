@@ -19,7 +19,7 @@ const languageList: ILanguageProps[] = [
     },
     {
         name: '繁體中文',
-        code: 'zh-tw',
+        code: 'zh-Tw',
     },
     {
         name: '简体中文',
