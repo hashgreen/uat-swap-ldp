@@ -1,3 +1,4 @@
+import { GALink } from '@/components/common'
 import classNames from 'classnames'
 import React from 'react'
 
@@ -5,14 +6,16 @@ interface ILearnMoreProps {
     href: string
     size: number
     className?: string
+    label: string
 }
 
-const LearnMore = ({ href, size, className }: ILearnMoreProps) => {
+const LearnMore = ({ href, size, className, label }: ILearnMoreProps) => {
     return (
-        <a
+        <GALink
+            category="learn-more"
+            action="Click"
+            label={label}
             href={href}
-            target="_blank"
-            rel="noopener noreferrer"
             className={classNames(
                 'flex flex-row items-center font-semibold',
                 className
@@ -25,7 +28,7 @@ const LearnMore = ({ href, size, className }: ILearnMoreProps) => {
                 width={size}
                 height={size}
             />
-        </a>
+        </GALink>
     )
 }
 

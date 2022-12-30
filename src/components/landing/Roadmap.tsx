@@ -9,7 +9,7 @@ import React from 'react'
 const RoadmapItem = ({ roadmap }: { roadmap: IRoadmapProps }) => {
     return (
         <div className="relative pl-11">
-            <div className="absolute top-0 left-0 h-10 w-10">
+            <div className="absolute top-1 left-0 h-10 w-10">
                 <img src="/images/icons/star.svg" alt="star" />
             </div>
             <div className="flex flex-col">
@@ -28,7 +28,10 @@ const RoadmapItem = ({ roadmap }: { roadmap: IRoadmapProps }) => {
                     {roadmap.title}
                 </p>
                 {roadmap.items.map((item) => (
-                    <div className="my-1 w-fit rounded-xl bg-[#1F3338] py-2 px-4 lg:rounded-3xl">
+                    <div
+                        className="my-1 w-fit rounded-xl bg-[#1F3338] py-2 px-4 lg:rounded-3xl"
+                        key={item.desc}
+                    >
                         <p className="mr-1 text-sm lg:text-base">{item.desc}</p>
                     </div>
                 ))}
@@ -45,9 +48,12 @@ const Roadmap = () => {
                     <p className="section-title">Roadmap</p>
                     <div className="relative mt-8 flex w-full max-w-[550px] flex-col gap-y-8">
                         {/* timeline */}
-                        <div className="absolute left-5 h-full border" />
+                        <div className="absolute left-[19px] h-full border" />
                         {roadmapList.map((roadmap) => (
-                            <RoadmapItem roadmap={roadmap} />
+                            <RoadmapItem
+                                roadmap={roadmap}
+                                key={roadmap.title}
+                            />
                         ))}
                     </div>
                 </div>

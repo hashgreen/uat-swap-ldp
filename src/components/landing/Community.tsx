@@ -1,4 +1,6 @@
-import { TempBg } from '@/components/common'
+/// <reference types="vite-plugin-svgr/client" />
+import { ReactComponent as LinkArrow } from '@/assets/images/icons/linkArrow.svg'
+import { GALink, TempBg } from '@/components/common'
 import { communityList } from '@/const/community'
 import React from 'react'
 
@@ -20,35 +22,48 @@ const Community = () => {
                             Please share all your feelings here, so that we can
                             create a better user experience for you!
                         </p>
-                        <div className="flex cursor-pointer flex-row rounded-xl bg-[#21B8E1] px-5 py-3">
+                        <GALink
+                            category="cta"
+                            action="Click"
+                            label="Click_community-connect-to-discord"
+                            href="https://"
+                            className="flex cursor-pointer flex-row rounded-xl bg-[#21B8E1] px-5 py-3"
+                        >
                             <p className="uppercase">Join Our Community</p>
                             <img
                                 src="/images/icons/linkArrow.svg"
                                 alt="link"
                                 className="ml-3"
                             />
-                        </div>
+                        </GALink>
                     </div>
                 </div>
                 <div className="flex flex-col gap-6 xl:flex-row">
                     {communityList.map((community) => (
-                        <div className="flex flex-col items-center justify-center rounded-xl border border-[#2A525E] py-8 xl:flex-1">
+                        <div
+                            className="flex flex-col items-center justify-center rounded-xl border border-[#2A525E] py-8 px-8 sm:px-11 xl:flex-1"
+                            key={community.alt}
+                        >
                             <img
                                 src={community.src}
                                 alt={community.alt}
                                 className="h-8 md:h-10"
                             />
-                            <p className="section-desc mt-6 md:mt-8">
+                            <p className="section-desc mt-6 max-w-[440px] text-center md:mt-8">
                                 {community.desc}
                             </p>
-                            <div className="mt-8 flex cursor-pointer flex-row rounded-xl border border-[#497684] px-5 py-3 md:mt-12">
-                                <p className="uppercase">Follow</p>
-                                <img
-                                    src="/images/icons/linkArrow.svg"
-                                    alt="link"
-                                    className="ml-3"
-                                />
-                            </div>
+                            <GALink
+                                category="cta"
+                                action="Click"
+                                label={community.label}
+                                href={community.href}
+                                className="mt-8 flex flex-row rounded-xl border border-[#497684] px-5 py-3 md:mt-12"
+                            >
+                                <p className="uppercase text-[#4A8495]">
+                                    Follow
+                                </p>
+                                <LinkArrow className="ml-3" stroke="#4A8495" />
+                            </GALink>
                         </div>
                     ))}
                 </div>
