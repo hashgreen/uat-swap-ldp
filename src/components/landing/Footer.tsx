@@ -1,8 +1,9 @@
 import { GALink } from '@/components/common'
 import { footerList } from '@/const/footer'
 import React from 'react'
+import { withTranslation, WithTranslation } from 'react-i18next'
 
-const Footer = () => {
+const Footer = ({ t }: WithTranslation) => {
     return (
         <div className="ldp-container-root w-full bg-[#152A30] pt-10 pb-3">
             <div className="ldp-container flex flex-col items-center">
@@ -11,22 +12,22 @@ const Footer = () => {
                     {footerList.map((footer) => (
                         <div
                             className="w-[112px] text-sm md:text-base"
-                            key={footer.title}
+                            key={footer.titleKey}
                         >
-                            <p className="mb-4">{footer.title}</p>
+                            <p className="mb-4">{t(footer.titleKey)}</p>
                             <div className="flex flex-col gap-y-2">
                                 {footer.items.map((item) => (
                                     <GALink
-                                        category={footer.title}
+                                        category={t(footer.titleKey)}
                                         action="Click"
                                         label={item.label}
                                         href={item.href}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        key={item.title}
+                                        key={t(item.titleKey)}
                                     >
                                         <p className="text-[#B6B6B6]">
-                                            {item.title}
+                                            {t(item.titleKey)}
                                         </p>
                                     </GALink>
                                 ))}
@@ -49,4 +50,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default withTranslation()(Footer)

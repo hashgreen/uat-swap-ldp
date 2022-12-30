@@ -29,7 +29,7 @@ const LinkButton = ({
             label={label}
             href={href}
             className={classNames(
-                'flex w-full max-w-[285px] flex-row gap-3 rounded-xl px-5 py-3 uppercase',
+                'flex w-full max-w-[285px] flex-row gap-x-3 rounded-xl px-5 py-3 uppercase',
                 className
             )}
         >
