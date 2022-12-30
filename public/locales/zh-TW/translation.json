@@ -8,5 +8,22 @@
   "feature-yiele_title": "產生耕種",
   "feature-yield_desc": "通過在頂級池中提供流動性來接收橋樑令牌。",
   "feature-protocol_title": "協議費用共享",
-  "feature-protocol_desc": "成為Hashgreen代幣持有人，並直接從協議增長中受益。"
+  "feature-protocol_desc": "成為hashgreen代幣持有人，並直接從協議增長中受益。",
+  "roadmap-title": "路線圖",
+  "roadmap-2022_Q4": "2022 Q4",
+  "roadmap-2022_Q4_1": "發佈白皮書",
+  "roadmap-2022_Q4_2": "制定AMM協議",
+  "roadmap-2023_Q1": "2023 Q1",
+  "roadmap-2023_Q1_1": "最終確定Hashgreen令牌令牌學",
+  "roadmap-2023_Q1_2": "Chia Testnet上的AMMα測試",
+  "roadmap-2023_Q1_3": "與延長錢包的整合（Hoogii錢包）",
+  "roadmap-2023_Q1_4": "開發DAO Staking協議",
+  "roadmap-2023_Q2": "2023 Q2",
+  "roadmap-2023_Q2_1": "Hashgreen代幣發布",
+  "roadmap-2023_Q2_2": "AMM在Chia Mainnet上的官方發布",
+  "roadmap-2023_Q2_3": "DAO在Chia Testnet上固定α測試",
+  "roadmap-2023_Q3": "2023 Q3",
+  "roadmap-2023_Q3_1": "DAO Stataking官方在Chia Mainnet上官方發射，使養殖和協議費共享",
+  "roadmap-2023_H2": "2023 H2",
+  "roadmap-2023_H2_1": "影響者與項目開發人員協作計劃"
 }

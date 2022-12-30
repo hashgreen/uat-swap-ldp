@@ -23,7 +23,7 @@ const languageList: ILanguageProps[] = [
     },
     {
         name: '简体中文',
-        code: 'cn',
+        code: 'zh-CN',
     },
 ]
 
@@ -59,6 +59,7 @@ const LanguageSelect = ({ className }: IProps) => {
 
     const handleItemClick = (code: string) => {
         i18n.changeLanguage(code)
+        setOpen(false)
     }
 
     return (

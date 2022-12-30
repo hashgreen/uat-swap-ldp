@@ -23,7 +23,7 @@ const FeatureItem = ({
                     />
                 </div>
             </div>
-            <div className="hidden h-[240px] max-w-[800px] overflow-hidden rounded-xl bg-[#203339] lg:flex lg:flex-row lg:items-center lg:justify-between">
+            <div className="hidden h-[240px] max-w-[800px] flex-1 overflow-hidden rounded-xl bg-[#203339] lg:flex lg:flex-row lg:items-center lg:justify-between">
                 <div className="flex h-full flex-1 flex-col justify-center gap-y-4 p-8">
                     <p className="text-3xl">{t(feature.titleKey)}</p>
                     <p className="section-desc">{t(feature.descKey)}</p>

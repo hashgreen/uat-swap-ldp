@@ -8,5 +8,22 @@
   "feature-yiele_title": "Yield Farming",
   "feature-yield_desc": "Receive Hashgreen tokens by providing liquidity in top pools.",
   "feature-protocol_title": "Protocol Fee Sharing",
-  "feature-protocol_desc": "Be a Hashgreen token holder, and directly benefit from protocol growth."
+  "feature-protocol_desc": "Be a Hashgreen token holder, and directly benefit from protocol growth.",
+  "roadmap-title": "Roadmap",
+  "roadmap-2022_Q4": "2022 Q4",
+  "roadmap-2022_Q4_1": "Publish whitepaper",
+  "roadmap-2022_Q4_2": "Development of AMM protocol",
+  "roadmap-2023_Q1": "2023 Q1",
+  "roadmap-2023_Q1_1": "Finalize Hashgreen token tokenomics",
+  "roadmap-2023_Q1_2": "AMM alpha testing on Chia testnet",
+  "roadmap-2023_Q1_3": "Integration with extension wallets (Hoogii wallet)",
+  "roadmap-2023_Q1_4": "Development of DAO staking protocol",
+  "roadmap-2023_Q2": "2023 Q2",
+  "roadmap-2023_Q2_1": "Hashgreen token launch",
+  "roadmap-2023_Q2_2": "AMM official launch on Chia mainnet",
+  "roadmap-2023_Q2_3": "DAO staking alpha testing on Chia testnet",
+  "roadmap-2023_Q3": "2023 Q3",
+  "roadmap-2023_Q3_1": "DAO staking official launch on Chia mainnet, enabling yield farming and protocol fee sharing",
+  "roadmap-2023_H2": "2023 H2",
+  "roadmap-2023_H2_1": "Influencer & project developer collaboration programs"
 }
