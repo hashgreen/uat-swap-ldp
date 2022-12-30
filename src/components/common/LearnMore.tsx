@@ -1,15 +1,16 @@
 import { GALink } from '@/components/common'
 import classNames from 'classnames'
 import React from 'react'
+import { withTranslation, WithTranslation } from 'react-i18next'
 
-interface ILearnMoreProps {
+interface ILearnMoreProps extends WithTranslation {
     href: string
     size: number
     className?: string
     label: string
 }
 
-const LearnMore = ({ href, size, className, label }: ILearnMoreProps) => {
+const LearnMore = ({ href, size, className, label, t }: ILearnMoreProps) => {
     return (
         <GALink
             category="learn-more"
@@ -21,7 +22,7 @@ const LearnMore = ({ href, size, className, label }: ILearnMoreProps) => {
                 className
             )}
         >
-            <p>learn more</p>
+            <p>{t('common-learn_more')}</p>
             <img
                 src="/images/icons/openLink.svg"
                 alt="open-link"
@@ -32,4 +33,4 @@ const LearnMore = ({ href, size, className, label }: ILearnMoreProps) => {
     )
 }
 
-export default LearnMore
+export default withTranslation()(LearnMore)
