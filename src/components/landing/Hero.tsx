@@ -2,6 +2,7 @@ import { GALink, TempBg } from '@/components/common'
 import { IGAProps } from '@/utils/ga'
 import classNames from 'classnames'
 import React from 'react'
+import { withTranslation, WithTranslation } from 'react-i18next'
 
 const LinkButton = ({
     category,
@@ -11,14 +12,16 @@ const LinkButton = ({
     alt,
     href,
     className,
-    desc,
+    localeKey,
+    t,
 }: {
     src: string
     alt: string
     href: string
     className: string
-    desc: string
-} & IGAProps) => {
+    localeKey: string
+} & IGAProps &
+    WithTranslation) => {
     return (
         <GALink
             category={category}
@@ -31,12 +34,14 @@ const LinkButton = ({
             )}
         >
             <img src={src} alt={alt} width={24} height={24} />
-            <p className="text-lg">{desc}</p>
+            <p className="text-lg">{t(localeKey)}</p>
         </GALink>
     )
 }
 
-const Hero = () => {
+const TransLinkButton = withTranslation()(LinkButton)
+
+const Hero = ({ t }: WithTranslation) => {
     return (
         <div className="ldp-container-root relative z-0 h-screen">
             {/* region start temp bg */}
@@ -48,15 +53,12 @@ const Hero = () => {
             </div>
             {/* region end temp bg */}
             <div className="ldp-container flex h-full flex-col items-center justify-center pt-10 text-center">
-                <p className="text-5xl md:text-6xl">
-                    Stake, Earn, and Swap on the Chia Blockchain
-                </p>
+                <p className="text-5xl md:text-6xl">{t('hero-title')}</p>
                 <p className="mt-4 text-base md:mt-10 md:text-2xl">
-                    Hashgreen brings the first decentralized liquidity staking
-                    and yield farming to you.
+                    {t('hero-sub-title')}
                 </p>
                 <div className="mt-14 flex w-full flex-wrap justify-center gap-6 xl:mt-24">
-                    <LinkButton
+                    <TransLinkButton
                         category="cta"
                         action="Click"
                         label="Click_hero-connect-to-discord"
@@ -64,9 +66,9 @@ const Hero = () => {
                         src="/images/icons/discord.svg"
                         alt="discord"
                         className="bg-[#21B8E1]"
-                        desc="Join our community"
+                        localeKey="common-join_community"
                     />
-                    <LinkButton
+                    <TransLinkButton
                         category="cta"
                         action="Click"
                         label="Click_hero-connect-to-twitter"
@@ -74,7 +76,7 @@ const Hero = () => {
                         src="/images/icons/twitter.svg"
                         alt="twitter"
                         className="border"
-                        desc="Follow our Twitter"
+                        localeKey="common-follow_twitter"
                     />
                 </div>
             </div>
@@ -82,4 +84,4 @@ const Hero = () => {
     )
 }
 
-export default Hero
+export default withTranslation()(Hero)
