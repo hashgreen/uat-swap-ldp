@@ -1,3 +1,4 @@
+export * from './GAComponent'
 export { default as IconLink } from './IconLink'
 export { default as LanguageSelect } from './LanguageSelect'
 export { default as LearnMore } from './LearnMore'

@@ -3,6 +3,7 @@ interface ICommunityProps {
     alt: string
     desc: string
     href: string
+    label: string
 }
 
 export const communityList: ICommunityProps[] = [
@@ -11,11 +12,13 @@ export const communityList: ICommunityProps[] = [
         alt: 'hashgreen twitter',
         desc: 'Follow the latest news from HashgreenSwap',
         href: 'https://',
+        label: 'Click_community-connect-to-twitter',
     },
     {
         src: '/images/icons/medium.svg',
         alt: 'medium',
         desc: 'Follow the latest news from HashgreenSwap',
         href: 'https://',
+        label: 'Click_community-connect-to-medium',
     },
 ]
