@@ -22,7 +22,7 @@ const Community = ({ t }: WithTranslation) => {
                             category="cta"
                             action="Click"
                             label="Click_community-connect-to-discord"
-                            href="https://"
+                            href="https://discord.gg/F2ZrUMHP"
                             className="flex cursor-pointer flex-row gap-x-3 rounded-xl bg-[#21B8E1] px-5 py-3"
                         >
                             <img

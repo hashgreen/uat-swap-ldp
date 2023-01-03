@@ -5,8 +5,6 @@ import React from 'react'
 import { withTranslation, WithTranslation } from 'react-i18next'
 
 const LinkButton = ({
-    category,
-    action,
     label,
     src,
     alt,
@@ -20,12 +18,12 @@ const LinkButton = ({
     href: string
     className: string
     localeKey: string
-} & IGAProps &
-    WithTranslation) => {
+    label: string
+} & WithTranslation) => {
     return (
         <GALink
-            category={category}
-            action={action}
+            category="cta"
+            action="Click"
             label={label}
             href={href}
             className={classNames(
@@ -59,20 +57,16 @@ const Hero = ({ t }: WithTranslation) => {
                 </p>
                 <div className="mt-14 flex w-full flex-wrap justify-center gap-6 xl:mt-24">
                     <TransLinkButton
-                        category="cta"
-                        action="Click"
                         label="Click_hero-connect-to-discord"
-                        href="https://"
+                        href="https://discord.gg/F2ZrUMHP"
                         src="/images/icons/discord.svg"
                         alt="discord"
                         className="bg-[#21B8E1]"
                         localeKey="common-join_community"
                     />
                     <TransLinkButton
-                        category="cta"
-                        action="Click"
                         label="Click_hero-connect-to-twitter"
-                        href="https://"
+                        href="https://twitter.com/hashgreenlabs"
                         src="/images/icons/twitter.svg"
                         alt="twitter"
                         className="border"

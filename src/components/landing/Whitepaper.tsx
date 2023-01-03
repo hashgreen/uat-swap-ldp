@@ -15,7 +15,7 @@ const Whitepaper = ({ t }: WithTranslation) => {
                     </p>
                     <LearnMore
                         className="mt-8"
-                        href="https://"
+                        href="https://docs.hash.green"
                         size={24}
                         label="Click_whitepaper"
                     />
