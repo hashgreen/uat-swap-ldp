@@ -1,10 +1,9 @@
 export interface IIRoadmapItemProps {
-    desc: string
-    href: string
+    descKey: string
 }
 
 export interface IRoadmapProps {
-    title: string
+    titleKey: string
     titleColor: RoadmapTitleColorType
     items: IIRoadmapItemProps[]
 }
@@ -17,76 +16,65 @@ export enum RoadmapTitleColorType {
 
 export const roadmapList: IRoadmapProps[] = [
     {
-        title: '2022 Q4',
+        titleKey: 'roadmap-2022_Q4',
         titleColor: RoadmapTitleColorType.LightGreen,
         items: [
             {
-                desc: 'Publish whitepaper',
-                href: 'https://',
+                descKey: 'roadmap-2022_Q4_1',
             },
             {
-                desc: 'Development of AMM protocol',
-                href: 'https://',
+                descKey: 'roadmap-2022_Q4_2',
             },
         ],
     },
     {
-        title: '2023 Q1',
+        titleKey: 'roadmap-2023_Q1',
         titleColor: RoadmapTitleColorType.LightBlue,
         items: [
             {
-                desc: 'Finalize Hashgreen token tokenomics',
-                href: 'https://',
+                descKey: 'roadmap-2023_Q1_1',
             },
             {
-                desc: 'AMM alpha testing on Chia testnet',
-                href: 'https://',
+                descKey: 'roadmap-2023_Q1_2',
             },
             {
-                desc: 'Integration with extension wallets (Hoogii wallet)',
-                href: 'https://',
+                descKey: 'roadmap-2023_Q1_3',
             },
             {
-                desc: 'Development of DAO staking protocol',
-                href: 'https://',
+                descKey: 'roadmap-2023_Q1_4',
             },
         ],
     },
     {
-        title: '2023 Q2',
+        titleKey: 'roadmap-2023_Q2',
         titleColor: RoadmapTitleColorType.LightBlue,
         items: [
             {
-                desc: 'Hashgreen token launch',
-                href: 'https://',
+                descKey: 'roadmap-2023_Q2_1',
             },
             {
-                desc: 'AMM official launch on Chia mainnet',
-                href: 'https://',
+                descKey: 'roadmap-2023_Q2_2',
             },
             {
-                desc: 'DAO staking alpha testing on Chia testnet',
-                href: 'https://',
+                descKey: 'roadmap-2023_Q2_3',
             },
         ],
     },
     {
-        title: '2023 Q3',
+        titleKey: 'roadmap-2023_Q3',
         titleColor: RoadmapTitleColorType.LightBlue,
         items: [
             {
-                desc: 'DAO staking official launch on Chia mainnet, enabling yield farming and protocol fee sharing',
-                href: 'https://',
+                descKey: 'roadmap-2023_Q3_1',
             },
         ],
     },
     {
-        title: '2023 H2',
+        titleKey: 'roadmap-2023_H2',
         titleColor: RoadmapTitleColorType.BlueGreen,
         items: [
             {
-                desc: 'Influencer & project developer collaboration programs',
-                href: 'https://',
+                descKey: 'roadmap-2023_H2_1',
             },
         ],
     },

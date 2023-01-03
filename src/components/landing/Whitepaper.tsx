@@ -1,18 +1,17 @@
 import { LearnMore, TempBg } from '@/components/common'
 import React from 'react'
+import { withTranslation, WithTranslation } from 'react-i18next'
 
-const Whitepaper = () => {
+const Whitepaper = ({ t }: WithTranslation) => {
     return (
         <div className="ldp-container-root mb-20">
             <div className="ldp-container flex flex-col rounded-xl border border-[#2A525E] lg:flex-row">
                 <div className="px-8 py-10">
-                    <p className="text-3xl sm:text-4xl">Whitepaper</p>
+                    <p className="text-3xl sm:text-4xl">
+                        {t('whitepaper-title')}
+                    </p>
                     <p className="mt-6 text-sm opacity-70 sm:mt-8 sm:text-base">
-                        HashgreenSwap exists to establish and develop more
-                        convenient transactions on Chia Network. This whitepaper
-                        will detail the considerations and analysis behind
-                        HashgreenSwap, and you are welcome to read it for
-                        further understanding.
+                        {t('whitepaper-desc')}
                     </p>
                     <LearnMore
                         className="mt-8"
@@ -29,4 +28,4 @@ const Whitepaper = () => {
     )
 }
 
-export default Whitepaper
+export default withTranslation()(Whitepaper)

@@ -1,85 +1,85 @@
 interface IFooterItemProps {
-    title: string
+    titleKey: string
     href: string
     label: string
 }
 
 interface IFooterProps {
-    title: string
+    titleKey: string
     items: IFooterItemProps[]
 }
 
 export const footerList: IFooterProps[] = [
     {
-        title: 'About',
+        titleKey: 'footer-about',
         items: [
             {
-                title: 'Team',
+                titleKey: 'footer-about_team',
                 href: 'https://',
                 label: 'Click_footer-team',
             },
             {
-                title: 'Updates',
+                titleKey: 'footer-about_updates',
                 href: 'https://',
                 label: 'Click_footer-updates',
             },
             {
-                title: 'FAQ',
+                titleKey: 'footer-about_faq',
                 href: 'https://',
                 label: 'Click_footer-faq',
             },
             {
-                title: 'Whitepaper',
+                titleKey: 'footer-about_whitepaper',
                 href: 'https://',
                 label: 'Click_footer-whitepaper',
             },
         ],
     },
     {
-        title: 'Contact',
+        titleKey: 'footer-contact',
         items: [
             {
-                title: 'Contact Us',
+                titleKey: 'footer-contact_us',
                 href: 'https://',
                 label: 'Click_footer-contact-us',
             },
             {
-                title: 'Token Listing',
+                titleKey: 'footer-contact_token',
                 href: 'https://',
                 label: 'Click_footer-token-listing',
             },
             {
-                title: 'Careers',
+                titleKey: 'footer-contact_careers',
                 href: 'https://',
                 label: 'Click_footer--career',
             },
         ],
     },
     {
-        title: 'Community',
+        titleKey: 'footer-community',
         items: [
             {
-                title: 'Discord',
+                titleKey: 'footer-community_discord',
                 href: 'https://',
                 label: 'Click_footer-discord',
             },
             {
-                title: 'Twitter',
+                titleKey: 'footer-community_twitter',
                 href: 'https://',
                 label: 'Click_footer-twitter',
             },
             {
-                title: 'Medium',
+                titleKey: 'footer-community_medium',
                 href: 'https://',
                 label: 'Click_footer-medium',
             },
         ],
     },
     {
-        title: 'Download',
+        titleKey: 'footer-download',
         items: [
             {
-                title: 'Media Kit',
+                titleKey: 'footer-download_media',
                 href: 'https://',
                 label: 'Click_footer-media-kit',
             },

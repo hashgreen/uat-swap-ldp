@@ -1,7 +1,7 @@
 export interface IFeatureProps {
     src: string // TODO: image may have different size
-    title: string
-    desc: string
+    titleKey: string
+    descKey: string
     href: string
     label: string
 }
@@ -9,22 +9,22 @@ export interface IFeatureProps {
 export const featureList: IFeatureProps[] = [
     {
         src: 'https://',
-        title: 'Stake and Earn',
-        desc: 'Provide liquidity in Chia or asset tokens, and earn fees from swappers.',
+        titleKey: 'feature-stake_title',
+        descKey: 'feature-stake_desc',
         href: '',
         label: 'Click_stack-&-earn',
     },
     {
         src: 'https://',
-        title: 'Yield Farming',
-        desc: 'Receive Hashgreen tokens by providing liquidity in top pools.',
+        titleKey: 'feature-yiele_title',
+        descKey: 'feature-yield_desc',
         href: '',
         label: 'Click_yield-farming',
     },
     {
         src: 'https://',
-        title: 'Protocol Fee Sharing',
-        desc: 'Be a Hashgreen token holder, and directly benefit from protocol growth.',
+        titleKey: 'feature-protocol_title',
+        descKey: 'feature-protocol_desc',
         href: '',
         label: 'Click_protocol-fee-sharing',
     },

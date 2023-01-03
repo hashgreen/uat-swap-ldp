@@ -1,11 +1,12 @@
 import { partnerList } from '@/const/partner'
 import React from 'react'
+import { withTranslation, WithTranslation } from 'react-i18next'
 
-const Partners = () => {
+const Partners = ({ t }: WithTranslation) => {
     return (
         <div className="ldp-container-root mb-16 md:mb-24">
             <div className="ldp-container flex flex-col items-center">
-                <p className="section-title">Partners & Investors</p>
+                <p className="section-title">{t('partners-title')}</p>
                 <div className="mt-8 flex w-full flex-row flex-wrap items-center justify-center gap-x-10 gap-y-6 md:max-w-[550px] xl:max-w-[1080px] xl:justify-between xl:gap-x-6">
                     {partnerList.map((partner) => (
                         <div
@@ -26,4 +27,4 @@ const Partners = () => {
     )
 }
 
-export default Partners
+export default withTranslation()(Partners)

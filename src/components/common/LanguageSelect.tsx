@@ -1,6 +1,7 @@
 import { GADiv } from '@/components/common'
 import classNames from 'classnames'
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 interface IProps {
     className?: string
@@ -18,11 +19,11 @@ const languageList: ILanguageProps[] = [
     },
     {
         name: '繁體中文',
-        code: 'zh-tw',
+        code: 'zh-TW',
     },
     {
         name: '简体中文',
-        code: 'cn',
+        code: 'zh-CN',
     },
 ]
 
@@ -50,13 +51,15 @@ const MenuItem = ({
 
 const LanguageSelect = ({ className }: IProps) => {
     const [open, setOpen] = useState<boolean>(false)
+    const { i18n } = useTranslation()
 
     const handleToggle = () => {
         setOpen(!open)
     }
 
     const handleItemClick = (code: string) => {
-        console.log(code)
+        i18n.changeLanguage(code)
+        setOpen(false)
     }
 
     return (
