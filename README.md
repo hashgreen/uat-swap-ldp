@@ -41,29 +41,8 @@ yarn dev
 ```
 
 ### Domain
-* [All hashgreen project domain list](https://www.notion.so/stmharry/Domain-name-2d06ccb2de5c48de98d209e24a8358a7)
-* [Pyke official repo](https://github.com/hashgreen/pyke-ldp)
+參考 [[Doc] Services & Deployments](https://www.notion.so/Doc-Services-Deployments-2d06ccb2de5c48de98d209e24a8358a7) 
 
-```
-### Pyke ldp
-
-source code: https://github.com/hashgreen/pyke-ldp
-
-**prod**
-deploy: https://hashgreen.github.io/swap-ldp
-website: hash.green
-
-**uat**
-deploy: https://hashgreen.github.io/uat-swap-ldp
-website: [uat-swap-ldp.hash.green](https://uat-swap-ldp.hash.green/)
-
-### Pyke app
-
-**mainnet**
-source code: https://github.com/hashgreen/pyke-frontend
-deploy: k8s
-website: swap.hash.green
-
-**testnet**
-website: testnet-swap.hash.green
-```
+- 開發 repo: [github.com/hashgreen/pyke-ldp](http://github.com/hashgreen/pyke-ldp)
+- UAT GH pages repo: [github.com/hashgreen/uat-swap-ldp.hashgreen.github.io](http://github.com/hashgreen/uat-swap-ldp.hashgreen.github.io)
+- PROD GH pages repo: [github.com/hashgreen/swap-ldp.hashgreen.github.io](http://github.com/hashgreen/swap-ldp.hashgreen.github.io)
