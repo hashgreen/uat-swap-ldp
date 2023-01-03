@@ -1,6 +1,7 @@
 import { GADiv } from '@/components/common'
+import { useClickOutside } from '@/hook'
 import classNames from 'classnames'
-import React, { useState } from 'react'
+import React, { ReactElement, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 interface IProps {
@@ -52,7 +53,16 @@ const MenuItem = ({
 
 const LanguageSelect = ({ className }: IProps) => {
     const [open, setOpen] = useState<boolean>(false)
+    const ref = useRef<HTMLDivElement>(null)
     const { i18n } = useTranslation()
+
+    useClickOutside(
+        ref,
+        () => {
+            setOpen(false)
+        },
+        'mousedown'
+    )
 
     const handleToggle = () => {
         setOpen(!open)
@@ -65,6 +75,7 @@ const LanguageSelect = ({ className }: IProps) => {
 
     return (
         <div
+            ref={ref}
             className={classNames(
                 className,
                 'relative flex items-center justify-center'
