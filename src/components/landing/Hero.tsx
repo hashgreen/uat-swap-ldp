@@ -42,14 +42,11 @@ const TransLinkButton = withTranslation()(LinkButton)
 const Hero = ({ t }: WithTranslation) => {
     return (
         <div className="ldp-container-root relative z-0 h-screen">
-            {/* region start temp bg */}
-            <div className="absolute -z-10 h-full w-full lg:hidden">
-                <TempBg size={160} />
-            </div>
-            <div className="absolute -z-10 hidden h-full w-full lg:block">
-                <TempBg size={250} />
-            </div>
-            {/* region end temp bg */}
+            <img
+                src="/images/hero_bg.png"
+                alt="hero bg"
+                className="absolute -z-10 aspect-auto h-full w-full object-cover"
+            />
             <div className="ldp-container flex h-full flex-col items-center justify-center pt-10 text-center">
                 <p className="text-5xl md:text-6xl">{t('hero-title')}</p>
                 <p className="mt-4 text-base md:mt-10 md:text-2xl">
