@@ -45,7 +45,7 @@ const Hero = ({ t }: WithTranslation) => {
             <img
                 src="/images/hero_bg.png"
                 alt="hero bg"
-                className="absolute -z-10 aspect-auto h-full w-full object-cover"
+                className="full-cover absolute -z-10"
             />
             <div className="ldp-container flex h-full flex-col items-center justify-center pt-10 text-center">
                 <p className="text-5xl md:text-6xl">{t('hero-title')}</p>

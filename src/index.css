@@ -27,6 +27,10 @@ body {
     @apply text-base opacity-70;
 }
 
+.full-cover {
+    @apply aspect-auto h-full w-full object-cover;
+}
+
 p {
     @apply text-white;
 }

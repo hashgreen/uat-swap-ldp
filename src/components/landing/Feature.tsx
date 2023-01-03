@@ -10,9 +10,11 @@ const FeatureItem = ({
     return (
         <div className="flex w-full justify-center">
             <div className="flex w-full max-w-[600px] flex-col overflow-hidden rounded-xl bg-[#203339] lg:hidden">
-                <div className="relative aspect-[2/1] w-full">
-                    <TempBg size={80} />
-                </div>
+                <img
+                    src={feature.src}
+                    alt={feature.alt}
+                    className="full-cover"
+                />
                 <div className="flex flex-col gap-y-4 p-8">
                     <p className="text-2xl">{t(feature.titleKey)}</p>
                     <p className="section-desc">{t(feature.descKey)}</p>
@@ -33,8 +35,12 @@ const FeatureItem = ({
                         label={feature.label}
                     />
                 </div>
-                <div className="relative h-full w-[320px]">
-                    <TempBg size={60} />
+                <div className="h-full w-[320px]">
+                    <img
+                        src={feature.src}
+                        alt={feature.alt}
+                        className="full-cover"
+                    />
                 </div>
             </div>
         </div>
