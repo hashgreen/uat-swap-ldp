@@ -18,8 +18,8 @@ https://github.com/hashgreen/uat-swap-ldp/blob/04518cdbb1d848b177f04403e833400ad
   extends the type `WithTranslation` so it can  get the i18n function like `t` or `i18n`
 https://github.com/hashgreen/uat-swap-ldp/blob/04518cdbb1d848b177f04403e833400ada1c37b9/src/components/common/LearnMore.tsx#L6-L13
 
-#### crowdin
-* [link](https://crowdin.com/project/hashgreen-swap)
+#### Crowdin
+* HashgreenSwap project [link](https://crowdin.com/project/hashgreen-swap)
 
 ## Development
 
