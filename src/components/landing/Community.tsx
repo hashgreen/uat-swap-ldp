@@ -9,13 +9,19 @@ const Community = ({ t }: WithTranslation) => {
     return (
         <div className="ldp-container-root mb-12 sm:mb-16 md:mb-20">
             <div className="ldp-container">
-                <div className="relative mb-8 h-[400px] w-full overflow-hidden rounded-xl border border-[#2A525E] xl:mb-20">
-                    <TempBg size={120} />
-                    <div className="z-1 absolute flex h-full w-full flex-col items-center justify-center gap-y-8 px-8 sm:px-11">
-                        <p className="max-w-[440px] text-center text-2xl lg:text-3xl">
+                <div className="relative mb-8 h-fit min-h-[400px] w-full overflow-hidden rounded-xl border border-[#2A525E] xl:mb-20">
+                    <div className="absolute h-full w-full">
+                        <img
+                            src="/images/community.png"
+                            alt="community"
+                            className="full-cover"
+                        />
+                    </div>
+                    <div className="absolute flex h-full w-full flex-col items-center justify-center gap-y-8 px-8 sm:px-11">
+                        <p className="max-w-[470px] text-center text-2xl lg:text-3xl xl:max-w-[830px]">
                             {t('community-discord_title')}
                         </p>
-                        <p className="section-desc max-w-[440px] text-center">
+                        <p className="section-desc max-w-[470px] text-center xl:max-w-[830px]">
                             {t('community-discord_desc')}
                         </p>
                         <GALink
@@ -48,7 +54,7 @@ const Community = ({ t }: WithTranslation) => {
                                 alt={community.alt}
                                 className="h-8 md:h-10"
                             />
-                            <p className="section-desc mt-6 max-w-[440px] text-center md:mt-8">
+                            <p className="section-desc mt-6 max-w-[470px] text-center md:mt-8">
                                 {t(community.descKey)}
                             </p>
                             <GALink

@@ -8,7 +8,7 @@ const Footer = ({ t }: WithTranslation) => {
         <div className="ldp-container-root w-full bg-[#152A30] pt-10 pb-3">
             <div className="ldp-container flex flex-col items-center">
                 {/* <div className="flex flex-row flex-wrap items-start justify-center gap-x-[88px] gap-y-8 md:justify-between md:gap-x-[50px]"> */}
-                <div className="grid w-fit grid-cols-2 gap-x-[88px] gap-y-8 xl:w-full xl:grid-cols-4">
+                <div className="grid w-fit grid-cols-2 gap-x-[88px] gap-y-8 md:w-full md:grid-cols-4">
                     {footerList.map((footer) => (
                         <div
                             className="w-[112px] text-sm md:text-base"
