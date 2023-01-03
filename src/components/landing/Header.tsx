@@ -37,7 +37,7 @@ const Header = ({ className }: IProps) => {
                     label="Click_header-connect-to-discord"
                     src="/images/icons/discord.svg"
                     alt="discord"
-                    href="https://"
+                    href="https://discord.gg/F2ZrUMHP"
                     className="h-6 w-6"
                 />
             </div>

@@ -21,10 +21,11 @@ const languageList: ILanguageProps[] = [
         name: '繁體中文',
         code: 'zh-TW',
     },
-    {
-        name: '简体中文',
-        code: 'zh-CN',
-    },
+    // NOTE : hide cn first
+    // {
+    //     name: '简体中文',
+    //     code: 'zh-CN',
+    // },
 ]
 
 const MenuItem = ({

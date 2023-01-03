@@ -35,16 +35,21 @@ const Footer = ({ t }: WithTranslation) => {
                         </div>
                     ))}
                 </div>
-                <div className="mt-10 flex flex-row items-center justify-center gap-x-2">
-                    <img src="/images/icons/cat.svg" alt="cat list" />
-                    <p className="section-desc">
-                        CAT list sourced from TAIL Database
-                    </p>
+                <div className="mt-10 mb-3 w-full xl:mb-4">
+                    <div className="my-2 hidden w-full border border-[#2A525E] xl:block" />
+                    <div className="flex w-full flex-col xl:mt-4 xl:flex-row xl:items-center xl:justify-between">
+                        <div className="flex flex-row items-center justify-center gap-x-2 ">
+                            <img src="/images/icons/cat.svg" alt="cat list" />
+                            <p className="section-desc text-[#CDCDCD]">
+                                CAT list sourced from TAIL Database
+                            </p>
+                        </div>
+                        <div className="my-2 w-full border border-[#2A525E] xl:hidden" />
+                        <p className="text-bases w-full  text-center xl:w-fit">
+                            Copyright © 2023 Hashgreen Inc. All rights reserved.
+                        </p>
+                    </div>
                 </div>
-                <div className="my-2 w-full border border-[#2A525E]" />
-                <p className="text-bases w-full text-center">
-                    Copyright © 2023 Hashgreen Inc. All rights reserved.
-                </p>
             </div>
         </div>
     )
