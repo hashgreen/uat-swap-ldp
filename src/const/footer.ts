@@ -31,9 +31,9 @@ export const footerList: IFooterProps[] = [
             //     label: 'Click_footer-faq',
             // },
             {
-                titleKey: 'footer-about_whitepaper',
+                titleKey: 'footer-about_docs',
                 href: 'https://docs.hash.green',
-                label: 'Click_footer-whitepaper',
+                label: 'Click_footer-docs',
             },
         ],
     },
