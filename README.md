@@ -8,6 +8,19 @@
 * [GA project](https://analytics.google.com/analytics/web/?authuser=1#/p347540937/reports/intelligenthome)
 * [GA event list](https://docs.google.com/spreadsheets/d/19irCOtBJdtsvDITScZ8wJs7igQ1lABPxcSC5WVOZeOY/edit#gid=0)
 
+### i18n
+* use `react-i18next` [link](https://react.i18next.com/)
+* json excel list [link](https://docs.google.com/spreadsheets/d/18fr5i14JnMnQylShn1vtQZjJTp-AqyANphBlZh0gdvU/edit#gid=845385020)
+* i18n tranlation json path : `public/locales/{ln}/translation.json`
+#### DEVELOP NOTE
+* i18n HOC : use `withTranslation` instead `import {...} from 'i18n'`
+https://github.com/hashgreen/uat-swap-ldp/blob/04518cdbb1d848b177f04403e833400ada1c37b9/src/components/common/LearnMore.tsx#L36
+  extends the type `WithTranslation` so it can  get the i18n function like `t` or `i18n`
+https://github.com/hashgreen/uat-swap-ldp/blob/04518cdbb1d848b177f04403e833400ada1c37b9/src/components/common/LearnMore.tsx#L6-L13
+
+#### crowdin
+* [link](https://crowdin.com/project/hashgreen-swap)
+
 ## Development
 
 ### Installation
